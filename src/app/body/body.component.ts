@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodyComponent implements OnInit {
 
+  public isSalad = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  public showSalad(): void {
+    this.isSalad = true;
+  }
 }
