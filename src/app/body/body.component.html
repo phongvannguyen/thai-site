@@ -163,17 +163,19 @@
           </div>
 
           <div class="col-md-12 text-center">
-
               <ul class="nav site-tab-nav nav-pills mb-5" id="pills-tab">
-                  <li class="nav-item site-animate">
-                      <a class="nav-link active" id="pills-breakfast-tab" (click)="showSalad()">Breakfast</a>
-                  </li>
+                <li class="nav-item site-animate">
+                  <select class="nav-link" id="pills-breakfast-tab" (change)="showMenu($event.target.value)">
+                    <option *ngFor="let menu of menus">{{ menu }}</option>
+                  </select>
+                </li>
               </ul>
-
               <div class="tab-content text-left">
-                  <app-salad *ngIf="isSalad"></app-salad>
+                <app-appetizer *ngIf="isAppetizer"></app-appetizer>
+                <app-salad *ngIf="isSalad"></app-salad>
+                <app-soup *ngIf="isSoup"></app-soup>
+                <app-desserts-drinks *ngIf="isDesertsDrinks"></app-desserts-drinks>
               </div>
-
           </div>
       </div>
   </div>

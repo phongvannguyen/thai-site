@@ -7,6 +7,9 @@ import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { SaladComponent } from './salad/salad.component';
 import { TestComponent } from './test/test.component';
+import { AppetizerComponent } from './appetizer/appetizer.component';
+import { SoupComponent } from './soup/soup.component';
+import { DessertsDrinksComponent } from './desserts-drinks/desserts-drinks.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { TestComponent } from './test/test.component';
     BodyComponent,
     FooterComponent,
     SaladComponent,
-    TestComponent
+    TestComponent,
+    AppetizerComponent,
+    SoupComponent,
+    DessertsDrinksComponent
   ],
   imports: [
     BrowserModule
