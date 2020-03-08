@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodyComponent implements OnInit {
 
-  public isAppetizer = false;
+  public isAppetizer = true;
   public isSalad = false;
   public isSoup = false;
   public isDesertsDrinks = false;
