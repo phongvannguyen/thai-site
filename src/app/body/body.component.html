@@ -165,18 +165,35 @@
           <div class="col-md-12 text-center">
               <ul class="nav site-tab-nav nav-pills mb-5" id="pills-tab">
                 <li class="nav-item site-animate">
-                  <select class="nav-link" id="pills-breakfast-tab" (change)="showMenu($event.target.value)">
-                    <option *ngFor="let menu of menus">{{ menu }}</option>
+                  <select class="nav-link" id="pills-breakfast-tab" (change)="setMenu($event.target.value)">
+                    <option *ngFor="let menu of commonMenus">{{ menu }}</option>
+                  </select>
+                </li>
+
+                <li class="nav-item site-animate">
+                  <select class="nav-link" id="pills-breakfast-tab" (change)="setMenu($event.target.value)">
+                    <option *ngFor="let menu of commonMenus">{{ menu }}</option>
+                  </select>
+                </li>
+
+                <li class="nav-item site-animate">
+                  <select class="nav-link" id="pills-breakfast-tab" (change)="setMenu($event.target.value)">
+                    <option *ngFor="let menu of commonMenus">{{ menu }}</option>
                   </select>
                 </li>
               </ul>
+
               <div class="tab-content text-left">
-                <app-appetizer *ngIf="isAppetizer"></app-appetizer>
-                <app-salad *ngIf="isSalad"></app-salad>
-                <app-soup *ngIf="isSoup"></app-soup>
-                <app-desserts-drinks *ngIf="isDesertsDrinks"></app-desserts-drinks>
+                <app-appetizer *ngIf="showMenu('Appetizer')"></app-appetizer>
+                <app-salad *ngIf="showMenu('Salad')"></app-salad>
+                <app-soup *ngIf="showMenu('Soup')"></app-soup>
+                <app-desserts-drinks *ngIf="showMenu('Desserts & Drinks')"></app-desserts-drinks>
               </div>
+
+
           </div>
+
+
       </div>
   </div>
 </section>
