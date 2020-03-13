@@ -8,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class BodyComponent implements OnInit {
 
   /* Common Menus of Lunch & Dinner*/
-  public menuClicked = 'Appetizer';
+  public menuClicked = 'Lunch Fried Rice & Noodles';
   public commonMenus = ['Appetizer', 'Salad', 'Soup', 'Desserts & Drinks'];
+  public lunchMenus = ['Lunch Entrees', 'Lunch Curries', 'Lunch Fried Rice & Noodles'];
   constructor() { }
 
   ngOnInit(): void {

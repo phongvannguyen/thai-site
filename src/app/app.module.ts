@@ -10,6 +10,9 @@ import { TestComponent } from './test/test.component';
 import { AppetizerComponent } from './appetizer/appetizer.component';
 import { SoupComponent } from './soup/soup.component';
 import { DessertsDrinksComponent } from './desserts-drinks/desserts-drinks.component';
+import { LunchEntreesComponent } from './lunch-entrees/lunch-entrees.component';
+import { LunchCurriesComponent } from './lunch-curries/lunch-curries.component';
+import { LunchRiceNoodlesComponent } from './lunch-rice-noodles/lunch-rice-noodles.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { DessertsDrinksComponent } from './desserts-drinks/desserts-drinks.compo
     TestComponent,
     AppetizerComponent,
     SoupComponent,
-    DessertsDrinksComponent
+    DessertsDrinksComponent,
+    LunchEntreesComponent,
+    LunchCurriesComponent,
+    LunchRiceNoodlesComponent
   ],
   imports: [
     BrowserModule
