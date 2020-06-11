@@ -1,3 +1,7 @@
 .menu-highlight {
   background-color: red;
 }
+
+.mr-3 {
+  margin-right: 1rem !important;
+}
