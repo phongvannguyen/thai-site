@@ -8,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class BodyComponent implements OnInit {
 
   /* Common Menus of Lunch & Dinner*/
-  public menuClicked = 'Lunch Fried Rice & Noodles';
+  public menuClicked = 'Appetizer';
   public commonMenus = ['Appetizer', 'Salad', 'Soup', 'Desserts & Drinks'];
   public lunchMenus = ['Lunch Entrees', 'Lunch Curries', 'Lunch Fried Rice & Noodles'];
+
   constructor() { }
 
   ngOnInit(): void {
@@ -23,5 +24,14 @@ export class BodyComponent implements OnInit {
 
   public showMenu(menu: string): boolean {
     return this.menuClicked === menu;
+  }
+
+  public isMenuClickedOn(menus: string[]): boolean {
+    const foundMenu = menus.findIndex((menu) => menu === this.menuClicked);
+    if (foundMenu > -1) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }

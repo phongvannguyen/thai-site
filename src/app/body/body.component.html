@@ -3,8 +3,8 @@
 
       <div class="row">
           <div class="col-md-12 text-center mb-5 site-animate">
-              <h4 class="site-sub-title">Our Offers</h4>
-              <h2 class="display-4">Our Offer This Summer</h2>
+              <h4 class="site-sub-title">Most Popular</h4>
+              <h2 class="display-4">Try These Dishes</h2>
               <div class="row justify-content-center">
                   <div class="col-md-7">
                       <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and
@@ -20,7 +20,7 @@
                           <img src="/assets/images/offer_1.jpg" alt="Free Template by colorlib.com" class="img-fluid">
                           <div class="media-body p-md-5 p-4">
                               <h5 class="text-primary">$19.50</h5>
-                              <h5 class="mt-0 h4">Beef with Sausage</h5>
+                              <h5 class="mt-0 h4">Pad Thai</h5>
                               <p class="mb-4">Far far away, behind the word mountains, far from the countries
                                   Vokalia and Consonantia, there live the blind texts.</p>
 
@@ -34,7 +34,7 @@
                           <img src="/assets/images/offer_2.jpg" alt="Free Template by colorlib.com" class="img-fluid">
                           <div class="media-body p-md-5 p-4">
                               <h5 class="text-primary">$29.50</h5>
-                              <h5 class="mt-0 h4">Egg with Garlic </h5>
+                              <h5 class="mt-0 h4">Pad Thai </h5>
                               <p class="mb-4">Far far away, behind the word mountains, far from the countries
                                   Vokalia and Consonantia, there live the blind texts.</p>
 
@@ -48,7 +48,7 @@
                           <img src="/assets/images/offer_3.jpg" alt="Free Template by colorlib.com" class="img-fluid">
                           <div class="media-body p-md-5 p-4">
                               <h5 class="text-primary">$11.50</h5>
-                              <h5 class="mt-0 h4">Beef Ribs</h5>
+                              <h5 class="mt-0 h4">Pad Thai</h5>
                               <p class="mb-4">Far far away, behind the word mountains, far from the countries
                                   Vokalia and Consonantia, there live the blind texts.</p>
 
@@ -62,7 +62,7 @@
                           <img src="/assets/images/offer_1.jpg" alt="Free Template by colorlib.com" class="img-fluid">
                           <div class="media-body p-md-5 p-4">
                               <h5 class="text-primary">$33.50</h5>
-                              <h5 class="mt-0 h4">Beef with Sauce</h5>
+                              <h5 class="mt-0 h4">Pad Thai</h5>
                               <p class="mb-4">Far far away, behind the word mountains, far from the countries
                                   Vokalia and Consonantia, there live the blind texts.</p>
 
@@ -76,7 +76,7 @@
                           <img src="/assets/images/offer_2.jpg" alt="Free Template by colorlib.com" class="img-fluid">
                           <div class="media-body p-md-5 p-4">
                               <h5 class="text-primary">$12.50</h5>
-                              <h5 class="mt-0 h4">Fresh Salmon Fish</h5>
+                              <h5 class="mt-0 h4">Pad Thai</h5>
                               <p class="mb-4">Far far away, behind the word mountains, far from the countries
                                   Vokalia and Consonantia, there live the blind texts.</p>
 
@@ -90,7 +90,7 @@
                           <img src="/assets/images/offer_3.jpg" alt="Free Template by colorlib.com" class="img-fluid">
                           <div class="media-body p-md-5 p-4">
                               <h5 class="text-primary">$53.50</h5>
-                              <h5 class="mt-0 h4">Beef Ribs</h5>
+                              <h5 class="mt-0 h4">Pad Thai</h5>
                               <p class="mb-4">Far far away, behind the word mountains, far from the countries
                                   Vokalia and Consonantia, there live the blind texts.</p>
 
@@ -104,7 +104,7 @@
                           <img src="/assets/images/offer_1.jpg" alt="Free Template by colorlib.com" class="img-fluid">
                           <div class="media-body p-md-5 p-4">
                               <h5 class="text-primary">$22.50</h5>
-                              <h5 class="mt-0 h4">Beef with Sauce</h5>
+                              <h5 class="mt-0 h4">Pad Thai</h5>
                               <p class="mb-4">Far far away, behind the word mountains, far from the countries
                                   Vokalia and Consonantia, there live the blind texts.</p>
 
@@ -118,7 +118,7 @@
                           <img src="/assets/images/offer_2.jpg" alt="Free Template by colorlib.com" class="img-fluid">
                           <div class="media-body p-md-5 p-4">
                               <h5 class="text-primary">$39.50</h5>
-                              <h5 class="mt-0 h4">Fresh Salmon Fish</h5>
+                              <h5 class="mt-0 h4">Pad Thai</h5>
                               <p class="mb-4">Far far away, behind the word mountains, far from the countries
                                   Vokalia and Consonantia, there live the blind texts.</p>
 
@@ -132,7 +132,7 @@
                           <img src="/assets/images/offer_3.jpg" alt="Free Template by colorlib.com" class="img-fluid">
                           <div class="media-body p-md-5 p-4">
                               <h5 class="text-primary">$39.50</h5>
-                              <h5 class="mt-0 h4">Beef Ribs</h5>
+                              <h5 class="mt-0 h4">Pad Thai</h5>
                               <p class="mb-4">Far far away, behind the word mountains, far from the countries
                                   Vokalia and Consonantia, there live the blind texts.</p>
 
@@ -165,13 +165,13 @@
           <div class="col-md-12 text-center">
               <ul class="nav site-tab-nav nav-pills mb-5" id="pills-tab">
                 <!-- Common Menus Dropdown-->
-                <li class="nav-item site-animate">
+                <li [ngClass]="isMenuClickedOn(commonMenus) ? 'menu-highlight' : ''" class="nav-item site-animate">
                   <select class="nav-link" id="pills-breakfast-tab" (change)="setMenu($event.target.value)">
                     <option *ngFor="let menu of commonMenus">{{ menu }}</option>
                   </select>
                 </li>
 
-                <li class="nav-item site-animate">
+                <li [ngClass]="isMenuClickedOn(lunchMenus) ? 'menu-highlight' : ''" class="nav-item site-animate">
                   <select class="nav-link" id="pills-breakfast-tab" (change)="setMenu($event.target.value)">
                     <option *ngFor="let menu of lunchMenus">{{ menu }}</option>
                   </select>
@@ -208,3 +208,4 @@
   </div>
 </section>
 <!-- END section -->
+
