@@ -539,12 +539,13 @@ textarea.form-control {
   }
 }
 
+/* changed from 12em to 2em */
 #section-offer {
-  padding: 12em 0;
+  padding: 2em 0;
 }
 
 .site-section {
-  padding: 7em 0;
+  padding: 1em 0;
 }
 
 .site-bg-dark {
