@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+.ico {
+  width: 100px;
+  display:inline;
+  height:20px;
+  background:white;
+  color:white;
+  text-decoration:none;
+  padding-left:20px;
+}
+.ico:before{
+  content: '';
+  background:url(assets/images/chili_pepper.png);
+  background-size:cover;
+      position:absolute;
+  width:20px;
+  height:20px;
+  margin-left:-20px;
+  margin-top: 5px;
+}

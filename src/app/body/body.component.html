@@ -1,7 +1,8 @@
 <section class="site-section bg-light" id="section-offer">
   <div class="container">
 
-      <div class="row">
+    <!-- to be finished at a later date -->
+      <!-- <div class="row">
           <div class="col-md-12 text-center mb-5 site-animate">
               <h4 class="site-sub-title">Most Popular</h4>
               <h2 class="display-4">Try These Dishes</h2>
@@ -146,7 +147,7 @@
 
       </div>
   </div>
-</section>
+</section> -->
 <!-- END section -->
 
 <section class="site-section" id="section-menu">
@@ -179,18 +180,21 @@
                 <!-- Common Menus Dropdown-->
                 <li [ngClass]="isMenuClickedOn(commonMenus) ? 'menu-highlight' : ''" class="nav-item site-animate">
                   <select class="nav-link" id="pills-breakfast-tab" (change)="setMenu($event.target.value)">
+                    <option [selected]="!isMenuClickedOn(commonMenus)" disabled>select an option</option>
                     <option *ngFor="let menu of commonMenus">{{ menu }}</option>
                   </select>
                 </li>
 
                 <li [ngClass]="isMenuClickedOn(lunchMenus) ? 'menu-highlight' : ''" class="nav-item site-animate">
                   <select class="nav-link" id="pills-breakfast-tab" (change)="setMenu($event.target.value)">
+                    <option [selected]="!isMenuClickedOn(lunchMenus)" disabled>Lunch options</option>
                     <option *ngFor="let menu of lunchMenus">{{ menu }}</option>
                   </select>
                 </li>
 
                 <li [ngClass]="isMenuClickedOn(dinnerMenus) ? 'menu-highlight' : ''" class="nav-item site-animate">
                   <select class="nav-link" id="pills-breakfast-tab" (change)="setMenu($event.target.value)">
+                    <option [selected]="!isMenuClickedOn(dinnerMenus)" disabled>dinner options</option>
                     <option *ngFor="let menu of dinnerMenus">{{ menu }}</option>
                   </select>
                 </li>
@@ -205,14 +209,14 @@
                 <app-beverages *ngIf="showMenu('Beverages')"></app-beverages>
               </div>
 
-              <!-- Lunch menus-->
+              <!-- Lunch menus tabs -->
               <div class="tab-content text-left">
                 <app-lunch-entrees *ngIf="showMenu('Lunch Entrees')"></app-lunch-entrees>
                 <app-lunch-curries *ngIf="showMenu('Lunch Curries')"></app-lunch-curries>
                 <app-lunch-rice-noodles *ngIf="showMenu('Lunch Fried Rice & Noodles')"></app-lunch-rice-noodles>
               </div>
 
-              <!-- Dinner menus-->
+              <!-- Dinner menus tabs-->
               <div class="tab-content text-left">
                 <app-house-specialties *ngIf="showMenu('House Specialties')"></app-house-specialties>
                 <app-dinner-entrees-one *ngIf="showMenu('Dinner Entrees 1')"></app-dinner-entrees-one>
@@ -221,9 +225,7 @@
                 <app-dinner-rice-noodles *ngIf="showMenu('Noodles & Fried Rice')"></app-dinner-rice-noodles>
               </div>
 
-
           </div>
-
 
       </div>
   </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-body',
@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodyComponent implements OnInit {
 
+  @ViewChild('commonMenu') commonMenu: ElementRef;
+
   /* Common Menus of Lunch & Dinner*/
-  public menuClicked = 'Dinner Entrees 1';
+  public menuClicked = 'Appetizer';
   public commonMenus = ['Appetizer', 'Salad', 'Soup', 'Desserts', 'Beverages'];
   public lunchMenus = ['Lunch Entrees', 'Lunch Curries', 'Lunch Fried Rice & Noodles'];
   public dinnerMenus = ['House Specialties', 'Dinner Entrees 1', 'Dinner Entrees 2', 'Curries', 'Noodles & Fried Rice'];
