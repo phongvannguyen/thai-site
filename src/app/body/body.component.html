@@ -152,8 +152,9 @@
 <section class="site-section" id="section-menu">
   <div class="container">
       <div class="row">
+        <!--Lunch Specials Options-->
           <div class="col-md-12 text-center mb-5 site-animate">
-              <h2 class="display-4">Delicious Menu</h2>
+              <h2 class="display-4">Menu</h2>
               <div class="row justify-content-center">
                   <div class="col-md-7">
                       <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and
@@ -161,6 +162,17 @@
                   </div>
               </div>
           </div>
+
+        <!--Lunch Specials Options-->
+        <div *ngIf="isMenuClickedOn(lunchMenus) ? 'menu-highlight' : ''" class="col-md-12 text-center mb-5 site-animate">
+          <h2 class="display-4">Menu</h2>
+          <div class="row justify-content-center">
+              <div class="col-md-7">
+                  <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and
+                      Consonantia, there live the blind texts.</p>
+              </div>
+          </div>
+        </div>
 
           <div class="col-md-12 text-center">
               <ul class="nav site-tab-nav nav-pills mb-5" id="pills-tab">
@@ -177,9 +189,9 @@
                   </select>
                 </li>
 
-                <li class="nav-item site-animate">
+                <li [ngClass]="isMenuClickedOn(dinnerMenus) ? 'menu-highlight' : ''" class="nav-item site-animate">
                   <select class="nav-link" id="pills-breakfast-tab" (change)="setMenu($event.target.value)">
-                    <option *ngFor="let menu of commonMenus">{{ menu }}</option>
+                    <option *ngFor="let menu of dinnerMenus">{{ menu }}</option>
                   </select>
                 </li>
               </ul>
@@ -189,7 +201,8 @@
                 <app-appetizer *ngIf="showMenu('Appetizer')"></app-appetizer>
                 <app-salad *ngIf="showMenu('Salad')"></app-salad>
                 <app-soup *ngIf="showMenu('Soup')"></app-soup>
-                <app-desserts-drinks *ngIf="showMenu('Desserts & Drinks')"></app-desserts-drinks>
+                <app-deserts *ngIf="showMenu('Desserts')"></app-deserts>
+                <app-beverages *ngIf="showMenu('Beverages')"></app-beverages>
               </div>
 
               <!-- Lunch menus-->
@@ -199,6 +212,14 @@
                 <app-lunch-rice-noodles *ngIf="showMenu('Lunch Fried Rice & Noodles')"></app-lunch-rice-noodles>
               </div>
 
+              <!-- Dinner menus-->
+              <div class="tab-content text-left">
+                <app-house-specialties *ngIf="showMenu('House Specialties')"></app-house-specialties>
+                <app-dinner-entrees-one *ngIf="showMenu('Dinner Entrees 1')"></app-dinner-entrees-one>
+                <app-dinner-entrees-two *ngIf="showMenu('Dinner Entrees 2')"></app-dinner-entrees-two>
+                <app-dinner-curries *ngIf="showMenu('Curries')"></app-dinner-curries>
+                <app-dinner-rice-noodles *ngIf="showMenu('Noodles & Fried Rice')"></app-dinner-rice-noodles>
+              </div>
 
 
           </div>

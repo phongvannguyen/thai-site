@@ -13,6 +13,13 @@ import { DessertsDrinksComponent } from './desserts-drinks/desserts-drinks.compo
 import { LunchEntreesComponent } from './lunch-entrees/lunch-entrees.component';
 import { LunchCurriesComponent } from './lunch-curries/lunch-curries.component';
 import { LunchRiceNoodlesComponent } from './lunch-rice-noodles/lunch-rice-noodles.component';
+import { DesertsComponent } from './deserts/deserts.component';
+import { BeveragesComponent } from './beverages/beverages.component';
+import { HouseSpecialtiesComponent } from './house-specialties/house-specialties.component';
+import { DinnerEntreesOneComponent } from './dinner-entrees-one/dinner-entrees-one.component';
+import { DinnerEntreesTwoComponent } from './dinner-entrees-two/dinner-entrees-two.component';
+import { DinnerCurriesComponent } from './dinner-curries/dinner-curries.component';
+import { DinnerRiceNoodlesComponent } from './dinner-rice-noodles/dinner-rice-noodles.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +34,14 @@ import { LunchRiceNoodlesComponent } from './lunch-rice-noodles/lunch-rice-noodl
     DessertsDrinksComponent,
     LunchEntreesComponent,
     LunchCurriesComponent,
-    LunchRiceNoodlesComponent
+    LunchRiceNoodlesComponent,
+    DesertsComponent,
+    BeveragesComponent,
+    HouseSpecialtiesComponent,
+    DinnerEntreesOneComponent,
+    DinnerEntreesTwoComponent,
+    DinnerCurriesComponent,
+    DinnerRiceNoodlesComponent
   ],
   imports: [
     BrowserModule
