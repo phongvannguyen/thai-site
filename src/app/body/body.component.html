@@ -192,12 +192,12 @@
                   </select>
                 </li>
 
-                <li [ngClass]="isMenuClickedOn(lunchMenus) ? 'menu-highlight' : ''" class="nav-item site-animate">
+                <!-- <li [ngClass]="isMenuClickedOn(lunchMenus) ? 'menu-highlight' : ''" class="nav-item site-animate">
                   <select class="nav-link" id="pills-breakfast-tab" (change)="setMenu($event.target.value)">
                     <option [selected]="!isMenuClickedOn(lunchMenus)" disabled>Lunch options</option>
                     <option *ngFor="let menu of lunchMenus">{{ menu }}</option>
                   </select>
-                </li>
+                </li> -->
 
                 <li [ngClass]="isMenuClickedOn(dinnerMenus) ? 'menu-highlight' : ''" class="nav-item site-animate">
                   <select class="nav-link" id="pills-breakfast-tab" (change)="setMenu($event.target.value)">
