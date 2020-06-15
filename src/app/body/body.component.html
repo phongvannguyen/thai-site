@@ -163,10 +163,29 @@
                           <p></p>
                           <sub>Items with </sub>
                           <i class="ico"></i>
+
                           <sub> indicate that the item is a bit spicy by default, please indicate to server your heat preference.
                             Spice level can be adjusted on majority of items on menu.
                             Additionally, we have a 1 to 5 star-system for spice. Ask server for clarification.
                             </sub>
+                          <div *ngIf="isMenuClickedOn(dinnerMenus)" style="font-weight: bold; line-height: 1; color: #990011FF;">
+                            <hr>
+                            <sub>(vegan proteins automatically pair with vegan sauce)</sub>
+                            <br>
+                            <sub>If you want more than one type of protein or just more protein:</sub>
+                            <br>
+                            <sub>$3.00 to add chicken OR beef</sub>
+                            <br>
+                            <sub>$4.00 to add shrimp OR scallop</sub>
+                            <br>
+                            <sub>$2.00 to add tofu</sub>
+                            <div *ngIf="menuClicked != 'Noodles & Fried Rice'">
+                              <br>
+                              <sub>$1.95 for extra white jasmine rice (we only have white jasmine rice)</sub>
+                              <br>
+                              <sub>Fried Rice is not a side option</sub>
+                            </div>
+                          </div>
                   </div>
               </div>
           </div>
@@ -233,7 +252,6 @@
               </div>
 
           </div>
-
       </div>
   </div>
 </section>
