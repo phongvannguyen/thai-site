@@ -10,12 +10,16 @@ export class HeaderComponent implements OnInit {
 
   products: any = [];
   announcement: string;
+  phoneNumber: string;
+  phoneNumberText: string;
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit(): void {
     this.httpClient.get('assets/announcement.txt').subscribe(data => {
       this.products = data;
       this.announcement = this.products.announcement;
+      this.phoneNumberText = this.products.phoneNumberText;
+      this.phoneNumber=this.phoneNumberText.replace('-', '');
     });
 
   }

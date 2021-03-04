@@ -1,3 +1,4 @@
 {
-  "announcement": ""
+  "announcement": "On Monday March 1st, we will open at 4:30 PM. We don't have chicken satay and coconut shrimp for the next couple days. Please check this website for updates as our phone's answering machine is broken. We now offer gift cards ($25 minimum). Until further notice, we do not allow dine-in. Modified last on 3/1/2021.",
+  "phoneNumberText": "410-581-0449"
 }
