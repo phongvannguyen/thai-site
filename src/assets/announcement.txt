@@ -1,4 +1,4 @@
 {
-  "announcement": "On Monday March 1st, we will open at 4:30 PM. We don't have chicken satay and coconut shrimp for the next couple days. Please check this website for updates as our phone's answering machine is broken. We now offer gift cards ($25 minimum). Until further notice, we do not allow dine-in. Modified last on 3/1/2021.",
-  "phoneNumberText": "410-581-0449"
+  "announcement": "UPDATE 7/12/2021: For health reasons we must push back our opening for dine-in to July 26th. We will also be closed on July 12th and 18th through the 20th. We apologize for the inconvenience. We are urgently hiring all positions, please stop by for an application form during business hours. Our phone number has changed to 410.581.0449 (previously our fax number). We now offer gift cards ($25 minimum). Modified last on 7/12/2021.",
+  "phoneNumber": "410-581-0449"
 }
